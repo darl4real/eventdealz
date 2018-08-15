@@ -3,7 +3,7 @@
     <v-flex xs6 offset-xs3>
       <panel title="Register">
         <form
-          name="tab-tracker-form"
+          name="eventdealz-form"
           autocomplete="off">
           <v-text-field
             label="Email"

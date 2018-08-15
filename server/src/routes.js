@@ -38,4 +38,4 @@ module.exports = (app) => {
     app.post('/histories',
         isAuthenticated,
         HistoriesController.post)
-};
+}

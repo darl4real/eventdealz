@@ -16,9 +16,13 @@
   "dependencies": {
     "axios": "^0.18.0",
     "gulp": "^4.0.0",
+    "lodash": "^4.17.10",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.1.11"
+    "vue-youtube-embed": "^2.2.1",
+    "vuetify": "^1.1.11",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

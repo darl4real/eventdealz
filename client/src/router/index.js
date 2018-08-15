@@ -1,4 +1,4 @@
-import CreateSong from '@/components/CreateSong'
+import CreateEvent from '@/components/CreateEvent'
 import EditEvent from '@/components/EditEvent'
 import Events from '@/components/Events/Index'
 import Login from '@/components/Login'
@@ -23,7 +23,7 @@ export default new Router({
         {
             path: '/events',
             name: 'events',
-            component: Event
+            component: Events
         },
         {
             path: '/events/create',
