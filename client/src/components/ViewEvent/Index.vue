@@ -46,7 +46,7 @@ export default {
   },
   async mounted () {
     const eventId = this.route.params.eventId
-    this.event = (await EventsService.show(EventId)).data
+    this.event = (await EventsService.show(eventId)).data
 
     if (this.isUserLoggedIn) {
       EventHistoryService.post({
@@ -57,7 +57,7 @@ export default {
   components: {
     EventMetadata,
     YouTube,
-    descriptions,
+    Descriptions,
     Tab
   }
 }
