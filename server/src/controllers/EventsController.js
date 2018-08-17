@@ -6,7 +6,7 @@ module.exports = {
             let events = null
             const search = req.query.search
             if (search) {
-                events = await event.findAll({
+                events = await Event.findAll({
                     where: {
                         $or: [
                             'title', 'owner', 'type', 'album'
@@ -35,7 +35,7 @@ module.exports = {
             res.send(event)
         } catch (err) {
             res.status(500).send({
-                error: 'an error has occured trying to show the event'
+                error: 'an error has occured trying to show the events'
             })
         }
     },

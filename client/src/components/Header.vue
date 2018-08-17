@@ -7,7 +7,7 @@
         :to="{
           name: 'events'
         }">
-        EventDealz
+        TabTracker
       </router-link>
     </v-toolbar-title>
 

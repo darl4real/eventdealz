@@ -36,7 +36,7 @@ module.exports = {
             const userId = req.user.id
             const { eventId } = req.body
             const history = await History.create({
-                EventId: eventId,
+                eventId: eventId,
                 UserId: userId
             })
             res.send(history)

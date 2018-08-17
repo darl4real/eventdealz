@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs4>
-      <panel title="Event Metadata">
+      <panel title="event Metadata">
         <v-text-field
           label="Title"
           required
@@ -37,7 +37,14 @@
           v-model="event.albumImageUrl"
         ></v-text-field>
 
-
+        <v-text-field
+          label="YouTube ID"
+          required
+          :rules="[required]"
+          v-model="event.youtubeId"
+        ></v-text-field>
+      </panel>
+    </v-flex>
 
     <v-flex xs8>
       <panel title="Event Structure" class="ml-2">
@@ -54,7 +61,7 @@
           multi-line
           required
           :rules="[required]"
-          v-model="event.description"
+          v-model="event.descriptions"
         ></v-text-field>
       </panel>
 
@@ -66,7 +73,7 @@
         dark
         class="cyan"
         @click="create">
-        Create Event
+        Create event
       </v-btn>
     </v-flex>
   </v-layout>
@@ -85,7 +92,7 @@ export default {
         album: null,
         albumImageUrl: null,
         youtubeId: null,
-        description: null,
+        descriptions: null,
         tab: null
       },
       error: null,

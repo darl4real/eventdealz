@@ -22,7 +22,7 @@ sequelize.sync({ force: true })
 
         await Promise.all(
             events.map(event => {
-                Event.create(event)
+                event.create(event)
             })
         )
 

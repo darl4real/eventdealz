@@ -1,5 +1,5 @@
 <template>
-  <panel title="Lyrics">
+  <panel title="Descriptions">
     <textarea
       readonly
       v-model="event.descriptions"

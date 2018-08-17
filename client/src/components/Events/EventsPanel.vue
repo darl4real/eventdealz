@@ -25,7 +25,7 @@
           <div class="event-title">
             {{event.title}}
           </div>
-          <div class="event-owner">
+          <div class="event-Owner">
             {{event.owner}}
           </div>
           <div class="event-type">
@@ -59,14 +59,14 @@ import EventsService from '@/services/EventsService'
 export default {
   data () {
     return {
-      events: null
+      Events: null
     }
   },
   watch: {
     '$route.query.search': {
       immediate: true,
       async handler (value) {
-        this.events = (await EventsService.index(value)).data
+        this.Events = (await EventsService.index(value)).data
       }
     }
   }

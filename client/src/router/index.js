@@ -21,12 +21,12 @@ export default new Router({
             component: Login
         },
         {
-            path: '/events',
-            name: 'events',
+            path: '/c',
+            name: 'Event',
             component: Events
         },
         {
-            path: '/events/create',
+            path: '/cs/create',
             name: 'events-create',
             component: CreateEvent
         },

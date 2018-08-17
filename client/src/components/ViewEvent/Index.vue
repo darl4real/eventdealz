@@ -2,7 +2,7 @@
   <div>
     <v-layout>
       <v-flex xs6>
-        <event-metadata :event="event" />
+        <event-metadata :event="v" />
       </v-flex>
 
       <v-flex xs6 class="ml-2">
@@ -16,7 +16,7 @@
       </v-flex>
 
       <v-flex xs6 class="ml-2">
-        <lyrics :event="event" />
+        <descriptions :event="event" />
       </v-flex>
     </v-layout>
   </div>
@@ -46,7 +46,7 @@ export default {
   },
   async mounted () {
     const eventId = this.route.params.eventId
-    this.event = (await EventsService.show(eventId)).data
+    this.event = (await EventsService.show(EventId)).data
 
     if (this.isUserLoggedIn) {
       EventHistoryService.post({
@@ -57,7 +57,7 @@ export default {
   components: {
     EventMetadata,
     YouTube,
-    Description,
+    descriptions,
     Tab
   }
 }
